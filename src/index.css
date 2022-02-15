@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(19, 19, 22);
+  user-select: none;
+}
+#screen {
+  background-color: black;
+  width: auto;
+  cursor: unset;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  grid-area: screen;
+}
+#screen input {
+  width: 90%;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  text-align: right;
+}
+#input {
+  width: auto;
+  height: auto;
+}
+#output {
+  width: auto;
+  height: auto;
+}
+#display {
+  color: white;
+  font-size: 20px;
+}
+.container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "screen screen screen screen"
+    "AC AC C multiply"
+    "seven eight nine divide"
+    "four five six add"
+    "one two three subtract"
+    "zero zero decimal equals";
+}
+
+.pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 50px;
+
+  margin: 2px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.operators {
+  background-color: rgb(206, 146, 36);
+}
+.operators:hover {
+  background-color: rgba(206, 147, 36, 0.589);
+}
+.num {
+  background-color: rgb(72, 59, 59);
+}
+.num:hover {
+  background-color: rgba(72, 59, 59, 0.371);
+}
+
+#clear {
+  grid-area: AC;
+  background-color: tomato;
+}
+#remove {
+  grid-area: C;
+  background-color: tomato;
+}
+#clear:hover {
+  background-color: rgba(255, 99, 71, 0.529);
+}
+#remove:hover {
+  background-color: rgba(255, 99, 71, 0.529);
+}
+#add {
+  grid-area: add;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#multiply {
+  grid-area: multiply;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#divide {
+  grid-area: divide;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#subtract {
+  grid-area: subtract;
+}
+#zero {
+  grid-area: zero;
+}
+#decimal {
+  grid-area: decimal;
+}
+#equals {
+  grid-area: equals;
+}
