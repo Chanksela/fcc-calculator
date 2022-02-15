@@ -6,7 +6,6 @@ export default function Calculator() {
   // displaying inputs and answer on the screen
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("0");
-  const [prevInput, setPrevInput] = useState("");
   //this function takes inputs and shows it on the "screen"
   const handleDisplay = (e) => {
     //function to not repeat opperators and 0 twice
@@ -51,7 +50,6 @@ export default function Calculator() {
   const clear = () => {
     setInput("");
     setOutput("0");
-    setPrevInput("");
   };
   // removes last number/symbol
   const remove = () => {
@@ -73,8 +71,7 @@ export default function Calculator() {
         <div className="grid">
           <div id="screen">
             <input id="input" value={input} placeholder="0" />
-            <input id="display" value={output} />
-            <input value={prevInput} />
+            <h2 id="display">{output}</h2>
           </div>
           <button onClick={clear} className="pad" id="clear">
             AC

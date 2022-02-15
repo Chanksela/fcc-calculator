@@ -24,14 +24,15 @@
 #input {
   width: auto;
   height: auto;
-}
-#output {
-  width: auto;
-  height: auto;
+  font-size: 18px;
+  padding-right: 30px;
 }
 #display {
   color: white;
-  font-size: 20px;
+  background-color: black;
+  font-size: 40px;
+  font-weight: 900;
+  padding-right: 30px;
 }
 .container {
   padding-top: 50px;
